@@ -8,21 +8,10 @@ body{
 }
 .header{
     padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     font-family: "Jost", sans-serif;
-}
-.list_right ul{
-    list-style-type: none;
-    display: flex;
-    text-decoration: none;
-    font-size: 1rem;
-    gap: 30px;
-    padding-left: 100px;
-}
-.list_right ul a{
-    color: rgb(42, 42, 42);
-    text-decoration: none;
 }
 .list_left ul{
     list-style-type: none;
@@ -30,13 +19,36 @@ body{
     text-decoration: none;
     font-size: 1rem;
     gap: 30px;
-    padding-right: 100px;
+    padding-left: 100px;
+}
+.list_left ul li:hover{
+    color: #fd2122;
 }
 .list_left ul a{
     color: rgb(42, 42, 42);
     text-decoration: none;
 }
+.list_right ul{
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+    font-size: 1rem;
+    gap: 30px;
+    padding-right: 100px;
+}
+.list_right ul li:hover{
+    color: #fd2122;
+}
+.list_right ul a{
+    color: rgb(42, 42, 42);
+    text-decoration: none;
+}
+.list_right ul i:hover{
+    color: #fd2122;
+}
 .header_content{
+    padding-top: 50px;
+    padding-bottom: 30px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
@@ -59,10 +71,77 @@ body{
 }
 .hd_list select{
     border: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     cursor: pointer;
     width: 10%;
 }
 .hd_list select:hover{
     color: #fd2122;
+}
+.hd_menu{
+    display: none;
+}
+.hd_icons a{
+    color: black;
+    margin: 0 20px 0 0;
+    font-size: 1.7rem;
+}
+.hd_icons a:hover{
+    color: #fd2122;
+}
+.hd_icons input{
+    display: none;
+}
+.hd_offer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100%;
+}
+.hd_offer p{
+    padding-top: 10px;
+}
+.hd_offer p a{
+    color: #f73636;
+    font-size: larger;
+}
+.hd.container{
+    display: grid;
+    grid-template-columns: auto auto;
+
+    width: 100%;
+}
+.container_image{
+    background-image: url("./");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    padding-left: 100px;
+    padding-top: 300px;
+}
+.container_image h2{
+    color: white;
+}
+.container_image p{
+    color: rgb(188, 183, 183);
+    width: 45%;
+    padding-bottom: 30px;
+}
+.container_image a button{
+    font-size: 40px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.container_image a button:hover{
+    color: black;
+    background-color: white;
+}
+.hd_content{
+    width: 30%;
 }

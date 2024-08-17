@@ -76,7 +76,7 @@ body{
     width: 10%;
 }
 .hd_list select:hover{
-    color: #fd2122;
+    width: 100px;
 }
 .hd_menu{
     display: none;
@@ -106,42 +106,76 @@ body{
     color: #f73636;
     font-size: larger;
 }
-.hd.container{
-    display: grid;
-    grid-template-columns: auto auto;
-
+.hd_container{
+    display:flex;
     width: 100%;
 }
-.container_image{
-    background-image: url("./");
-    background-repeat: no-repeat;
+.left_container{
+    width: 25%;
+    background-color: rgb(20, 19, 19);
     height: 100vh;
+}
+.left_container ul{
+    box-shadow: 0px 10px 10px 0px grey;
+}
+.left_container ul a{
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 20px;
+}
+.left_container ul a:hover{
+    color: #fd2122;
+}
+.right_container{
     width: 100%;
+    height: 100vh;
+    background-image: url("./images/back.jpg");
+    background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding-left: 100px;
-    padding-top: 300px;
 }
-.container_image h2{
-    color: white;
+.right_container ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    justify-content: center;
+    padding-top: 20px;
 }
-.container_image p{
-    color: rgb(188, 183, 183);
-    width: 45%;
-    padding-bottom: 30px;
+.right_container ul a{
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
-.container_image a button{
-    font-size: 40px;
-    width: 200px;
+.hd_button{
+    padding-left: 65%;
+    padding-top: 85vh;
+}
+.btn1{
     background-color: black;
     color: white;
+    font-size: 1.8rem;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
 }
-.container_image a button:hover{
+.btn1:hover{
+    background-color: transparent;
     color: black;
-    background-color: white;
+    border: 1px solid black;
 }
-.hd_content{
-    width: 30%;
+.btn2{
+    background-color: white;
+    color: black;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
 }

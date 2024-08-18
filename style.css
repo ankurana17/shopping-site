@@ -179,3 +179,66 @@ body{
     color: white;
     border: 1px solid white;
 }
+.item_container{
+    padding-top: 100px;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.fashion_container{
+    margin: 0px 50px 0px 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+}
+.fashion_container a{
+    text-decoration: none;
+    color: rgb(154, 150, 150);
+}
+.item1{
+    padding-top: 300px;
+    font-size: 1.4rem;
+    text-align: center;
+    background-image: url("./images/item1.webp");
+    height: 370px;
+    width: 400px;
+}
+.item2{
+    padding-top: 300px;
+    font-size: 1.4rem;
+    text-align: center;
+    background-image: url("./images/items2.jpg.webp");
+    height: 370px;
+    width: 400px;
+}
+.item3{
+    padding-top: 300px;
+    font-size: 1.4rem;
+    text-align: center;
+    background-image: url("./images/items3.jpg.webp");
+    height: 370px;
+    width: 400px;
+}
+.this_week{
+    display: flex;
+    margin:0px 100px 0px 100px;
+    justify-content: space-between;
+}
+.trending{
+    font-size: 1.5rem;
+}
+.trending_list ul{
+    display:flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 1.5rem;
+}
+.trending_list ul a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.trending_list ul a:hover{
+    color: #f73636;
+    text-decoration: underline;
+}

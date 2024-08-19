@@ -147,6 +147,9 @@ body{
     font-size: 1.5rem;
     text-decoration: none;
 }
+.right_container ul a:hover{
+    color: #f73636;
+}
 .hd_button{
     padding-left: 65%;
     padding-top: 85vh;
@@ -248,7 +251,7 @@ body{
 }
 .fashion_container{
     height: 50vh;
-    width: 100%;
+    width: 90%;
 }
 .fash_cont{
     height: 100%;
@@ -276,6 +279,72 @@ body{
     color: rgb(37, 37, 37);
 }
 .latest1 p b{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    color: #ee8a8a;
+}
+.latest2{
+    background-image: url("./images/latest2.jpg.webp");
+    height: 350px;
+    width: 312px;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 300px;
+}
+.latest2 a{
+    background-color: white;
+    color: black;
+}
+.latest2 a:hover{
+    color: #f73636;
+}
+.latest2 p{
+    color: rgb(37, 37, 37);
+}
+.latest2 p b{
+    font-size: 1.5rem;
+    color: #ee8a8a;
+}
+.latest3{
+    background-image: url("./images/latest3.jpg.webp");
+    height: 350px;
+    width: 312px;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 300px;
+}
+.latest3 a{
+    background-color: white;
+    color: black;
+}
+.latest3 a:hover{
+    color: #f73636;
+}
+.latest3 p{
+    color: rgb(37, 37, 37);
+}
+.latest3 p b{
+    font-size: 1.5rem;
+    color: #ee8a8a;
+}
+.latest4{
+    background-image: url("./images/latest4.jpg.webp");
+    height: 350px;
+    width: 312px;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 300px;
+}
+.latest4 a{
+    background-color: white;
+    color: black;
+}
+.latest4 a:hover{
+    color: #f73636;
+}
+.latest4 p{
+    color: rgb(37, 37, 37);
+}
+.latest4 p b{
+    font-size: 1.5rem;
     color: #ee8a8a;
 }

@@ -205,7 +205,6 @@ body{
     background-image: url("./images/item1.avif");
     height: 370px;
     width: 400px;
-    background-repeat: no-repeat;
 }
 .item1 b:hover{
     color: #f73636;

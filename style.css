@@ -516,7 +516,7 @@ body{
 }
 .latest_fash{
     padding-top: 100px;
-    height: 100%;
+    height: 90vh;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -548,4 +548,122 @@ body{
 }
 .news1 a:hover{
     color: #f73636;
+}
+.services{
+    padding-top: 400px;
+    height: 70vh;
+    width: 100%;
+    padding-bottom: 200px;
+}
+.serv{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    text-align: center;
+}
+.serv i{
+    font-size: 4.5rem;
+}
+.serv h4{
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.serv p{
+    color: rgb(72, 70, 70);
+}
+.serv h4:hover{
+    color: #f73636;
+}
+.serv p:hover{
+    color: #f73636;
+}
+.footer_subscribe{
+    padding-top: 100px;
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+}
+.sub_text{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    text-align: center;
+}
+.sub_content h3{
+    color: white;
+    font-size: 2.1rem;
+    padding-bottom: 15px;
+}
+.sub_content p{
+    color: grey;
+}
+.sub_label input{
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 2px;
+}
+.sub_label a button{
+    background-color:#fd2122;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+.sub_label a button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.sub_icons ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.sub_icons a{
+    color: white;
+    font-size: 2rem;
+}
+.sub_icons a:hover{
+    color: #f73636;
+}
+.footer{
+    padding-top: 80px;
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+}
+.footer_last{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.footer_logo{
+    font-size: 2rem;
+}
+.footer_last h3{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.footer_last ul{
+    list-style: none;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.footer_last a{
+    color: rgb(122, 122, 123);
+    text-decoration: none;
+}
+.footer_last a li:hover{
+    color: #f73636;
+    text-decoration: underline;
 }

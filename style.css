@@ -666,3 +666,25 @@ body{
     color: #f73636;
     text-decoration: underline;
 }
+.signup{
+    text-align: center;
+    background-image: url("./images/login_back.png");
+    padding-left: 30%;
+    padding-top: 100px;
+}
+.signup_form{
+    font-size: 2rem;
+    border: 1px solid wheat;
+    background-color: rgba(245, 161, 5, 0.2);
+    height: 600px;
+    width: 600px;
+}
+.signup_form i{
+    font-size: 3rem;
+    color: white;
+}
+.signup_form h1{
+    color: white;
+    background-color: rgb(254, 168, 8);
+    border-radius: 5px;
+}

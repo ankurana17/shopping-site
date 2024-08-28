@@ -25,11 +25,10 @@ router.use("/signup",(req,res)=>{
             var firstname=req.body.firstname
             var lastname=req.body.lastname
             var email=req.body.email
+            var phoneno=req.body.phoneno
             var password=req.body.password
             var confirmpassword=req.body.confirmpassword
-            var phoneno=req.body.phoneno
-            var gender=req.body.gender
-            const q=`insert into signup(firstname,lastname,email,password,phoneno,gender,confirmpassword)values('${firstname}','${lastname}','${email}','${password}','${confirmpassword}''${phoneno}','${gender}',)`
+            const q=`insert into signup(firstname,lastname,email,password,confirmpassword,phoneno,)values('${firstname}','${lastname}','${email}','${password}','${confirmpassword}','${phoneno}')`
             connection.query(q,(err)=>
             {
                 if(err){
@@ -46,4 +45,7 @@ router.use("/signup",(req,res)=>{
     })
     }
 })
+
+
+
 module.exports=router

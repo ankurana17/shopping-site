@@ -100,7 +100,7 @@
     </div>
     <div class="signup">
     <div class="signup_form">
-    <form action="/signup" class="signup_form" method="">
+    <form action="/signup" class="signup_form" method="post">
         <i class="bi bi-person-fill"></i>
         <h1> Sign Up</h1><br><br>
         <input type="text" name="firstname" required placeholder="enter your first name">
@@ -115,6 +115,10 @@
             <input type="radio" name="gender" id="other">Other
         </label><br><br>
         <button class="btn1">Sign Up</button><br>
+        <% if(locals.message){
+            %>
+            <%=message%>
+            <%}%>
         <a href="">Already have an account?<button class="btn">Login</button></a>
     </form>
     

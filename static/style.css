@@ -162,6 +162,7 @@ body{
     border-radius: 5px;
     width: 150px;
     cursor: pointer;
+    height: 40px;
 }
 .btn1:hover{
     background-color: transparent;
@@ -171,11 +172,12 @@ body{
 .btn2{
     background-color: white;
     color: black;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     border: none;
     border-radius: 5px;
-    width: 150px;
+    width: 100px;
     cursor: pointer;
+    height: 40px;
 }
 .btn2:hover{
     background-color: transparent;

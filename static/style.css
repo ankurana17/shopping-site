@@ -735,3 +735,35 @@ body{
 .btn:hover{
     color:#f73636;
 }
+.login{
+    text-align: center;
+    background-image: url("./images/back.jpg");
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30%;
+}
+.login_form{
+    text-align: center;
+    font-size: 2rem;
+    height: 600px;
+    width: 600px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(243, 195, 161, 0.2);
+    box-shadow: 0px 10px 5px 0px;
+}
+.login_form i{
+    font-size: 3rem;
+    width: 600px;
+    color: white;
+}
+.login_form h1{
+    color: white;
+    border-radius: 5px;
+    background-color: orange;
+}
+.login_form a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}

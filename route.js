@@ -45,7 +45,47 @@ router.use("/signup",(req,res)=>{
     })
     }
 })
-
-
+router.use("/login",(req,res)=>
+    {
+        if(req.method==='GET'){
+            res.render("login")
+            res.end()
+        }
+        else{
+            mysql_connect.getConnection((err,connection)=>
+            {
+                if(err){
+                    connection.release()
+                    res.send(err)
+                    res.end()
+                }
+                else{
+                    var email=req.body.email
+                    var password=req.body.password
+                    const q=`select * from signup where email='${email}' and password='${password}'`
+                    connection.query(q,(err,data)=>
+                {
+        if(err){
+            connection.release()
+                    res.render(err)
+                    res.end()
+        }
+        else{
+                if(data.length>0)
+                {
+                    res.render("index")
+                    res.end()
+                }
+                else
+                {
+                res.render('login',{message:"  incorrect password"})
+                }
+        }
+    })
+                    }
+            })
+        }
+    }
+    )
 
 module.exports=router

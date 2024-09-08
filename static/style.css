@@ -57,7 +57,7 @@ body{
 .hd_list ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 .hd_list ul li:hover{
     color: #fd2122;
@@ -563,6 +563,7 @@ body{
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
     text-align: center;
+    cursor: pointer;
 }
 .serv i{
     font-size: 4.5rem;
@@ -733,7 +734,7 @@ body{
     cursor: pointer;
 }
 .btn:hover{
-    color:#f73636;
+    color:black;
 }
 .login{
     text-align: center;
@@ -753,7 +754,7 @@ body{
     box-shadow: 0px 10px 5px 0px;
 }
 .login_form i{
-    font-size: 3rem;
+    font-size: 5rem;
     width: 600px;
     color: white;
 }
@@ -766,4 +767,315 @@ body{
     text-decoration: none;
     font-size: 1.5rem;
     color: white;
+}
+.login_form input{
+    font-size: 2.5rem;
+    border-radius: 5px;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Jost", sans-serif;
+    animation: slideInTop 1s ease-in-out;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list_left ul,
+    .list_right ul {
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .hd_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fashion_container, 
+    .fash_cont1 {
+        grid-template-columns: 1fr;
+    }
+
+    .left_container {
+        width: 100%;
+    }
+
+    .right_container {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1024px) {
+    .fashion_container, 
+    .fash_cont1 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@keyframes slideInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.list_left ul li:hover,
+.list_right ul li:hover,
+.item1 b:hover,
+.item2 b:hover,
+.item3 b:hover,
+.hd_icons a:hover,
+.hd_button .btn1:hover,
+.hd_button .btn2:hover {
+    transition: color 0.3s ease-in-out;
+}
+
+.item1, .item2, .item3, .latest1, .latest2, .latest3, .latest4 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+.btn1, .btn2 {
+    transition: all 0.3s ease;
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.left_container {
+    width: 25%;
+    background-color: rgb(20, 19, 19);
+    height: 100vh;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+.right_container {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fashion_container, .fash_cont {
+    animation: fadeIn 1s ease-in-out;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Jost", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Jost", sans-serif;
+}
+
+.header_content {
+    padding: 50px 0 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    font-size: 1.2rem;
+    justify-items: center;
+    gap: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.list_left ul li:hover, .list_right ul li:hover, .hd_icons a:hover {
+    color: #fd2122;
+    transform: scale(1.1);
+}
+
+.list_left ul, .list_right ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.list_left ul a, .list_right ul a {
+    color: rgb(42, 42, 42);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.hd_icons a {
+    font-size: 1.7rem;
+    color: black;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.right_container, .fash_cont, .fash_cont1, .fashion_container, .item1, .item2, .item3 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.right_container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url("./images/back.jpg") no-repeat center center fixed;
+    background-size: cover;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.btn1, .btn2 {
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn1:hover, .btn2:hover {
+    transform: scale(1.05);
+}
+
+.item1, .item2, .item3 {
+    animation: bounceIn 2s ease-in-out;
+}
+
+.item1:hover, .item2:hover, .item3:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.latest1:hover, .latest2:hover, .latest3:hover, .latest4:hover , .latest5:hover , .latest6:hover , .latest7:hover , .latest8:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.customer {
+    background-color: rgba(236, 195, 203, 0.2);
+    height: 70vh;
+    animation: bounceIn 2s ease-in-out;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .list_left ul, .list_right ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .fashion_container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .fash_cont, .fash_cont1 {
+        grid-template-columns: 1fr;
+    }
+
+    .item1, .item2, .item3 {
+        width: 100%;
+    }
+
+    .hd_button {
+        padding-left: 0;
+        text-align: center;
+        padding-top: 80%;
+    }
+
+    .customer {
+        padding-top: 20px;
+        margin-top: 0;
+    }
+
+    .sub_content h3 {
+        font-size: 1.5rem;
+    }
+
+    .signup_form, .login_form {
+        width: 90%;
+    }
+}
+
+.hd_button .btn1:hover {
+    animation: bounceIn 1s ease-in-out;
 }
